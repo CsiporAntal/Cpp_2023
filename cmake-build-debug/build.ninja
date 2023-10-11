@@ -82,8 +82,6 @@ build lab01/CMakeFiles/lab1.dir/main_01.cpp.obj: CXX_COMPILER__lab1_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab01\CMakeFiles\lab1.dir
   OBJECT_FILE_DIR = lab01\CMakeFiles\lab1.dir
-  TARGET_COMPILE_PDB = lab01\CMakeFiles\lab1.dir\
-  TARGET_PDB = lab01\lab1.pdb
 
 
 # =============================================================================
@@ -99,10 +97,9 @@ build lab01/lab1.exe: CXX_EXECUTABLE_LINKER__lab1_Debug lab01/CMakeFiles/lab1.di
   OBJECT_DIR = lab01\CMakeFiles\lab1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab01\CMakeFiles\lab1.dir\
   TARGET_FILE = lab01\lab1.exe
   TARGET_IMPLIB = lab01\liblab1.dll.a
-  TARGET_PDB = lab01\lab1.pdb
+  TARGET_PDB = lab1.exe.dbg
 
 
 #############################################
@@ -146,8 +143,12 @@ build lab02/CMakeFiles/lab2.dir/main_02.cpp.obj: CXX_COMPILER__lab2_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab02\CMakeFiles\lab2.dir
   OBJECT_FILE_DIR = lab02\CMakeFiles\lab2.dir
-  TARGET_COMPILE_PDB = lab02\CMakeFiles\lab2.dir\
-  TARGET_PDB = lab02\lab2.pdb
+
+build lab02/CMakeFiles/lab2.dir/Point.cpp.obj: CXX_COMPILER__lab2_unscanned_Debug C$:/Users/Toni/Documents/c++/cpp-labor/lab02/Point.cpp || cmake_object_order_depends_target_lab2
+  DEP_FILE = lab02\CMakeFiles\lab2.dir\Point.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  OBJECT_DIR = lab02\CMakeFiles\lab2.dir
+  OBJECT_FILE_DIR = lab02\CMakeFiles\lab2.dir
 
 
 # =============================================================================
@@ -157,16 +158,15 @@ build lab02/CMakeFiles/lab2.dir/main_02.cpp.obj: CXX_COMPILER__lab2_unscanned_De
 #############################################
 # Link the executable lab02\lab2.exe
 
-build lab02/lab2.exe: CXX_EXECUTABLE_LINKER__lab2_Debug lab02/CMakeFiles/lab2.dir/main_02.cpp.obj
+build lab02/lab2.exe: CXX_EXECUTABLE_LINKER__lab2_Debug lab02/CMakeFiles/lab2.dir/main_02.cpp.obj lab02/CMakeFiles/lab2.dir/Point.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lab02\CMakeFiles\lab2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab02\CMakeFiles\lab2.dir\
   TARGET_FILE = lab02\lab2.exe
   TARGET_IMPLIB = lab02\liblab2.dll.a
-  TARGET_PDB = lab02\lab2.pdb
+  TARGET_PDB = lab2.exe.dbg
 
 
 #############################################
@@ -210,8 +210,18 @@ build lab03/CMakeFiles/lab3.dir/main_03.cpp.obj: CXX_COMPILER__lab3_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab03\CMakeFiles\lab3.dir
   OBJECT_FILE_DIR = lab03\CMakeFiles\lab3.dir
-  TARGET_COMPILE_PDB = lab03\CMakeFiles\lab3.dir\
-  TARGET_PDB = lab03\lab3.pdb
+
+build lab03/CMakeFiles/lab3.dir/List.cpp.obj: CXX_COMPILER__lab3_unscanned_Debug C$:/Users/Toni/Documents/c++/cpp-labor/lab03/List.cpp || cmake_object_order_depends_target_lab3
+  DEP_FILE = lab03\CMakeFiles\lab3.dir\List.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  OBJECT_DIR = lab03\CMakeFiles\lab3.dir
+  OBJECT_FILE_DIR = lab03\CMakeFiles\lab3.dir
+
+build lab03/CMakeFiles/lab3.dir/Stack.cpp.obj: CXX_COMPILER__lab3_unscanned_Debug C$:/Users/Toni/Documents/c++/cpp-labor/lab03/Stack.cpp || cmake_object_order_depends_target_lab3
+  DEP_FILE = lab03\CMakeFiles\lab3.dir\Stack.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  OBJECT_DIR = lab03\CMakeFiles\lab3.dir
+  OBJECT_FILE_DIR = lab03\CMakeFiles\lab3.dir
 
 
 # =============================================================================
@@ -221,16 +231,15 @@ build lab03/CMakeFiles/lab3.dir/main_03.cpp.obj: CXX_COMPILER__lab3_unscanned_De
 #############################################
 # Link the executable lab03\lab3.exe
 
-build lab03/lab3.exe: CXX_EXECUTABLE_LINKER__lab3_Debug lab03/CMakeFiles/lab3.dir/main_03.cpp.obj
+build lab03/lab3.exe: CXX_EXECUTABLE_LINKER__lab3_Debug lab03/CMakeFiles/lab3.dir/main_03.cpp.obj lab03/CMakeFiles/lab3.dir/List.cpp.obj lab03/CMakeFiles/lab3.dir/Stack.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = lab03\CMakeFiles\lab3.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab03\CMakeFiles\lab3.dir\
   TARGET_FILE = lab03\lab3.exe
   TARGET_IMPLIB = lab03\liblab3.dll.a
-  TARGET_PDB = lab03\lab3.pdb
+  TARGET_PDB = lab3.exe.dbg
 
 
 #############################################
@@ -274,8 +283,6 @@ build lab04/CMakeFiles/lab4.dir/main_04.cpp.obj: CXX_COMPILER__lab4_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab04\CMakeFiles\lab4.dir
   OBJECT_FILE_DIR = lab04\CMakeFiles\lab4.dir
-  TARGET_COMPILE_PDB = lab04\CMakeFiles\lab4.dir\
-  TARGET_PDB = lab04\lab4.pdb
 
 
 # =============================================================================
@@ -291,10 +298,9 @@ build lab04/lab4.exe: CXX_EXECUTABLE_LINKER__lab4_Debug lab04/CMakeFiles/lab4.di
   OBJECT_DIR = lab04\CMakeFiles\lab4.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab04\CMakeFiles\lab4.dir\
   TARGET_FILE = lab04\lab4.exe
   TARGET_IMPLIB = lab04\liblab4.dll.a
-  TARGET_PDB = lab04\lab4.pdb
+  TARGET_PDB = lab4.exe.dbg
 
 
 #############################################
@@ -338,8 +344,6 @@ build lab05/CMakeFiles/lab5.dir/main_05.cpp.obj: CXX_COMPILER__lab5_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab05\CMakeFiles\lab5.dir
   OBJECT_FILE_DIR = lab05\CMakeFiles\lab5.dir
-  TARGET_COMPILE_PDB = lab05\CMakeFiles\lab5.dir\
-  TARGET_PDB = lab05\lab5.pdb
 
 
 # =============================================================================
@@ -355,10 +359,9 @@ build lab05/lab5.exe: CXX_EXECUTABLE_LINKER__lab5_Debug lab05/CMakeFiles/lab5.di
   OBJECT_DIR = lab05\CMakeFiles\lab5.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab05\CMakeFiles\lab5.dir\
   TARGET_FILE = lab05\lab5.exe
   TARGET_IMPLIB = lab05\liblab5.dll.a
-  TARGET_PDB = lab05\lab5.pdb
+  TARGET_PDB = lab5.exe.dbg
 
 
 #############################################
@@ -402,8 +405,6 @@ build lab06/CMakeFiles/lab6.dir/main_06.cpp.obj: CXX_COMPILER__lab6_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab06\CMakeFiles\lab6.dir
   OBJECT_FILE_DIR = lab06\CMakeFiles\lab6.dir
-  TARGET_COMPILE_PDB = lab06\CMakeFiles\lab6.dir\
-  TARGET_PDB = lab06\lab6.pdb
 
 
 # =============================================================================
@@ -419,10 +420,9 @@ build lab06/lab6.exe: CXX_EXECUTABLE_LINKER__lab6_Debug lab06/CMakeFiles/lab6.di
   OBJECT_DIR = lab06\CMakeFiles\lab6.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab06\CMakeFiles\lab6.dir\
   TARGET_FILE = lab06\lab6.exe
   TARGET_IMPLIB = lab06\liblab6.dll.a
-  TARGET_PDB = lab06\lab6.pdb
+  TARGET_PDB = lab6.exe.dbg
 
 
 #############################################
@@ -466,8 +466,6 @@ build lab07/CMakeFiles/lab7.dir/main_07.cpp.obj: CXX_COMPILER__lab7_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab07\CMakeFiles\lab7.dir
   OBJECT_FILE_DIR = lab07\CMakeFiles\lab7.dir
-  TARGET_COMPILE_PDB = lab07\CMakeFiles\lab7.dir\
-  TARGET_PDB = lab07\lab7.pdb
 
 
 # =============================================================================
@@ -483,10 +481,9 @@ build lab07/lab7.exe: CXX_EXECUTABLE_LINKER__lab7_Debug lab07/CMakeFiles/lab7.di
   OBJECT_DIR = lab07\CMakeFiles\lab7.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab07\CMakeFiles\lab7.dir\
   TARGET_FILE = lab07\lab7.exe
   TARGET_IMPLIB = lab07\liblab7.dll.a
-  TARGET_PDB = lab07\lab7.pdb
+  TARGET_PDB = lab7.exe.dbg
 
 
 #############################################
@@ -530,8 +527,6 @@ build lab08/CMakeFiles/lab8.dir/main_08.cpp.obj: CXX_COMPILER__lab8_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab08\CMakeFiles\lab8.dir
   OBJECT_FILE_DIR = lab08\CMakeFiles\lab8.dir
-  TARGET_COMPILE_PDB = lab08\CMakeFiles\lab8.dir\
-  TARGET_PDB = lab08\lab8.pdb
 
 
 # =============================================================================
@@ -547,10 +542,9 @@ build lab08/lab8.exe: CXX_EXECUTABLE_LINKER__lab8_Debug lab08/CMakeFiles/lab8.di
   OBJECT_DIR = lab08\CMakeFiles\lab8.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab08\CMakeFiles\lab8.dir\
   TARGET_FILE = lab08\lab8.exe
   TARGET_IMPLIB = lab08\liblab8.dll.a
-  TARGET_PDB = lab08\lab8.pdb
+  TARGET_PDB = lab8.exe.dbg
 
 
 #############################################
@@ -594,8 +588,6 @@ build lab09/CMakeFiles/lab9.dir/main_09.cpp.obj: CXX_COMPILER__lab9_unscanned_De
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab09\CMakeFiles\lab9.dir
   OBJECT_FILE_DIR = lab09\CMakeFiles\lab9.dir
-  TARGET_COMPILE_PDB = lab09\CMakeFiles\lab9.dir\
-  TARGET_PDB = lab09\lab9.pdb
 
 
 # =============================================================================
@@ -611,10 +603,9 @@ build lab09/lab9.exe: CXX_EXECUTABLE_LINKER__lab9_Debug lab09/CMakeFiles/lab9.di
   OBJECT_DIR = lab09\CMakeFiles\lab9.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab09\CMakeFiles\lab9.dir\
   TARGET_FILE = lab09\lab9.exe
   TARGET_IMPLIB = lab09\liblab9.dll.a
-  TARGET_PDB = lab09\lab9.pdb
+  TARGET_PDB = lab9.exe.dbg
 
 
 #############################################
@@ -658,8 +649,6 @@ build lab10/CMakeFiles/lab10.dir/main_10.cpp.obj: CXX_COMPILER__lab10_unscanned_
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab10\CMakeFiles\lab10.dir
   OBJECT_FILE_DIR = lab10\CMakeFiles\lab10.dir
-  TARGET_COMPILE_PDB = lab10\CMakeFiles\lab10.dir\
-  TARGET_PDB = lab10\lab10.pdb
 
 
 # =============================================================================
@@ -675,10 +664,9 @@ build lab10/lab10.exe: CXX_EXECUTABLE_LINKER__lab10_Debug lab10/CMakeFiles/lab10
   OBJECT_DIR = lab10\CMakeFiles\lab10.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab10\CMakeFiles\lab10.dir\
   TARGET_FILE = lab10\lab10.exe
   TARGET_IMPLIB = lab10\liblab10.dll.a
-  TARGET_PDB = lab10\lab10.pdb
+  TARGET_PDB = lab10.exe.dbg
 
 
 #############################################
@@ -722,8 +710,6 @@ build lab11/CMakeFiles/lab11.dir/main_11.cpp.obj: CXX_COMPILER__lab11_unscanned_
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab11\CMakeFiles\lab11.dir
   OBJECT_FILE_DIR = lab11\CMakeFiles\lab11.dir
-  TARGET_COMPILE_PDB = lab11\CMakeFiles\lab11.dir\
-  TARGET_PDB = lab11\lab11.pdb
 
 
 # =============================================================================
@@ -739,10 +725,9 @@ build lab11/lab11.exe: CXX_EXECUTABLE_LINKER__lab11_Debug lab11/CMakeFiles/lab11
   OBJECT_DIR = lab11\CMakeFiles\lab11.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab11\CMakeFiles\lab11.dir\
   TARGET_FILE = lab11\lab11.exe
   TARGET_IMPLIB = lab11\liblab11.dll.a
-  TARGET_PDB = lab11\lab11.pdb
+  TARGET_PDB = lab11.exe.dbg
 
 
 #############################################
@@ -786,8 +771,6 @@ build lab12/CMakeFiles/lab12.dir/main_12.cpp.obj: CXX_COMPILER__lab12_unscanned_
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab12\CMakeFiles\lab12.dir
   OBJECT_FILE_DIR = lab12\CMakeFiles\lab12.dir
-  TARGET_COMPILE_PDB = lab12\CMakeFiles\lab12.dir\
-  TARGET_PDB = lab12\lab12.pdb
 
 
 # =============================================================================
@@ -803,10 +786,9 @@ build lab12/lab12.exe: CXX_EXECUTABLE_LINKER__lab12_Debug lab12/CMakeFiles/lab12
   OBJECT_DIR = lab12\CMakeFiles\lab12.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab12\CMakeFiles\lab12.dir\
   TARGET_FILE = lab12\lab12.exe
   TARGET_IMPLIB = lab12\liblab12.dll.a
-  TARGET_PDB = lab12\lab12.pdb
+  TARGET_PDB = lab12.exe.dbg
 
 
 #############################################
@@ -850,8 +832,6 @@ build lab13/CMakeFiles/lab13.dir/main_13.cpp.obj: CXX_COMPILER__lab13_unscanned_
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = lab13\CMakeFiles\lab13.dir
   OBJECT_FILE_DIR = lab13\CMakeFiles\lab13.dir
-  TARGET_COMPILE_PDB = lab13\CMakeFiles\lab13.dir\
-  TARGET_PDB = lab13\lab13.pdb
 
 
 # =============================================================================
@@ -867,10 +847,9 @@ build lab13/lab13.exe: CXX_EXECUTABLE_LINKER__lab13_Debug lab13/CMakeFiles/lab13
   OBJECT_DIR = lab13\CMakeFiles\lab13.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = lab13\CMakeFiles\lab13.dir\
   TARGET_FILE = lab13\lab13.exe
   TARGET_IMPLIB = lab13\liblab13.dll.a
-  TARGET_PDB = lab13\lab13.pdb
+  TARGET_PDB = lab13.exe.dbg
 
 
 #############################################
@@ -1058,14 +1037,14 @@ build lab13/all: phony lab13/lab13.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/Toni/Documents/c++/cpp-labor/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab01/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab02/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab03/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab04/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab05/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab06/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab07/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab08/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab09/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab10/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab11/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab12/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab13/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/Toni/Documents/c++/cpp-labor/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab01/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab02/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab03/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab04/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab05/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab06/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab07/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab08/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab09/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab10/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab11/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab12/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab13/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/Toni/Documents/c++/cpp-labor/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab01/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab02/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab03/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab04/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab05/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab06/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab07/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab08/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab09/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab10/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab11/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab12/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab13/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/Toni/Documents/c++/cpp-labor/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab01/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab02/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab03/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab04/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab05/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab06/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab07/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab08/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab09/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab10/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab11/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab12/CMakeLists.txt C$:/Users/Toni/Documents/c++/cpp-labor/lab13/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################
