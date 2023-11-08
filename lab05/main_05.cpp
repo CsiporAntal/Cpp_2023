@@ -1,6 +1,10 @@
 #include <iostream>
+#include "Quiz.h"
+#include "QuizGame.h"
 
 int main() {
-    std::cout << "Hello, Lab_05" << std::endl;
+
+    QuizGame quizGame("labor5 kviz","lab05/quiz.txt");
+    quizGame.startGame();
     return 0;
 }
